@@ -52,7 +52,12 @@ ls routinen/langfristig/        # Jährlich/Strategisch
 - **[anleitungen/java-live-test.md](anleitungen/java-live-test.md)** - Java-App testen: Headless-Test im Codespace & GUI lokal starten
 - **[anleitungen/rdb-live-test-und-webserver-setup.md](anleitungen/rdb-live-test-und-webserver-setup.md)** - Docker-Testumgebung, Webserver-Voraussetzungen, Apache/MySQL/phpMyAdmin/Workbench-Setup fuer relationale Datenbanken
 
-### 🔧 Grundlagen & Setup
+### � Lernmaterial & Zusatzinhalte
+- **[../../generated/informationen/README.md](../../generated/informationen/README.md)** - Überblick über thematische Informationen zu relationalen Datenbanken
+- **[../../generated/uebungen/README.md](../../generated/uebungen/README.md)** - Sammelübersicht zu SQL-Übungen und Übungsdaten
+- **[../../generated/anleitungen/README.md](../../generated/anleitungen/README.md)** - Ergänzende Anleitungen und Stoffverlaufspläne
+
+### �🔧 Grundlagen & Setup
 - **[PFLICHTENHEFT.md](PFLICHTENHEFT.md)** - Alles über das System & Anforderungen
 - **[ARCHITEKTUR.md](ARCHITEKTUR.md)** - Wie das System funktioniert
 - **[MARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)** - Zeitplan & Meilenstones
