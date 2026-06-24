@@ -23,3 +23,18 @@ Ein Kurs kann im Team von einem oder mehreren Lehrkräften betreut werden.(M)
 Kurse - Buchungen
 1. Eine Buchung wird einem Kurs zugeordnet (1)
 2. Einem Kurs werden mehrere Buchungen zugeordnet (N)
+
+## EERM-Grafik (Übersicht)
+Die Originalmodell-Datei liegt als MySQL Workbench-Datei vor: [1.mwb](1.mwb).
+
+```mermaid
+erDiagram
+    TEILNEHMENDE ||--o{ BUCHUNGEN : nimmt\nvor
+    KURSE ||--o{ BUCHUNGEN : enthält
+    KURSE ||--o{ KURSE_HAS_TERMINE : hat
+    TERMINE ||--o{ KURSE_HAS_TERMINE : ist\nzugeordnet
+    LEHRKRAFTE ||--o{ LEHRKRAFTE_HAS_KURSE : betreut
+    KURSE ||--o{ LEHRKRAFTE_HAS_KURSE : wird\nbetreut
+```
+
+Hinweis: Die Verbindung zwischen `KURSE` und `TERMINE` sowie zwischen `LEHRKRAFTE` und `KURSE` ist im Modell als zusätzliche Zusammenhangstabelle umgesetzt, weil jeweils eine N:M-Beziehung vorliegt.
