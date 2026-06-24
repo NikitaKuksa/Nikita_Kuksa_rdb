@@ -21,14 +21,11 @@ WHERE Kategorie = 'Vegan';
 ```sql
 SELECT Name
 FROM FOODTRUCK
+WHERE Kategorie = 'Vegan' AN```sql
+SELECT Name
+FROM FOODTRUCK
 WHERE Kategorie = 'Vegan' AND Rating >= 4.5;
-```
-
-## Wichtige Operatoren
-- =, <>, >, >=, <, <=
-- BETWEEN
-- IN
-- LIKE
+```- LIKE
 - IS NULL
 
 ## Merksätze
@@ -40,3 +37,6 @@ WHERE Kategorie = 'Vegan' AND Rating >= 4.5;
 - AND/OR ohne Klammern falsch kombinieren.
 - NULL mit = statt IS NULL prüfen.
 - Tippfehler in Literalen.
+
+## Begriffshilfe
+- [Stichwortverzeichnis Relationale Datenbanken](../begrifflichkeiten/stichwortverzeichnis_relationale_datenbanken.md)

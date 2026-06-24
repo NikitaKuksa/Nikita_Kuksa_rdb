@@ -25,11 +25,14 @@ Beispiel:
 SELECT Stadt, COUNT(*) AS Einsaetze
 FROM STANDORT s
 JOIN EINSATZ e ON e.StandortID = s.StandortID
+GROUP ```sql
+SELECT Stadt, COUNT(*) AS Einsaetze
+FROM STANDORT s
+JOIN EINSATZ e ON e.StandortID = s.StandortID
 GROUP BY Stadt
 HAVING COUNT(*) >= 5;
-```
-
-## Merksätze
-- GROUP BY erzeugt Auswertungseinheiten.
-- Aggregatfunktionen ohne GROUP BY liefern eine Gesamtsicht.
+```icht.
 - HAVING prüft Gruppenbedingungen.
+
+## Begriffshilfe
+- [Stichwortverzeichnis Relationale Datenbanken](../begrifflichkeiten/stichwortverzeichnis_relationale_datenbanken.md)

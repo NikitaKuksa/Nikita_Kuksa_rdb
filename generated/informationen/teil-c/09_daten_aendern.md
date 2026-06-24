@@ -18,12 +18,11 @@ WHERE TruckID = 101;
 ## Mehrere Felder
 ```sql
 UPDATE FOODTRUCK
+SET Kategorie = 'Fusion', Ra```sql
+UPDATE FOODTRUCK
 SET Kategorie = 'Fusion', Rating = 4.6
 WHERE TruckID = 102;
-```
-
-## Merksätze
-- UPDATE ohne WHERE ändert alle Zeilen.
+```n.
 - Vor UPDATE die Zielmenge mit SELECT prüfen.
 - Schlüsselbasierte Bedingungen sind am sichersten.
 
@@ -31,3 +30,6 @@ WHERE TruckID = 102;
 - Unscharfe Filterbedingungen.
 - Datentypverletzungen.
 - Geschäftslogik im Nachhinein „korrigieren“ statt vorher prüfen.
+
+## Begriffshilfe
+- [Stichwortverzeichnis Relationale Datenbanken](../begrifflichkeiten/stichwortverzeichnis_relationale_datenbanken.md)

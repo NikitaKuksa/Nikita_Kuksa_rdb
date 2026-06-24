@@ -15,17 +15,22 @@ VALUES (101, 'Green Wheels', 'Vegan', 4.7);
 ```
 
 ## Mehrere Datensätze
-```sql
+__`sql
 INSERT INTO STANDORT (StandortID, Stadt)
 VALUES (1, 'Kiel'), (2, 'Luebeck');
+`uebeck');
 ```
 
-## Merksätze
-- Spaltenliste immer explizit angeben.
-- Reihenfolge von Spalten und Werten muss übereinstimmen.
-- FK-Werte nur auf existierende PKs setzen.
+## Merksä```sql
+INSERT INTO STANDORT (StandortID, Stadt)
+VALUES (1, 'Kiel'), (2, 'Luebeck');
+```ereinstimmen.
+- FK-Werte nur auf ``istierende PKs setzen.
 
 ## Typische Fehler
 - Fehlende Pflichtspalten.
 - Falsche Datumsformate.
 - Fremdschlüssel auf nicht existente Datensätze.
+
+## Begriffshilfe
+- [Stichwortverzeichnis Relationale Datenbanken](../begrifflichkeiten/stichwortverzeichnis_relationale_datenbanken.md)

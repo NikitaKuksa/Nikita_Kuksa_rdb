@@ -24,12 +24,10 @@ WHERE Datum >= CURDATE();
 ```
 
 ```sql
+SELECT EinsatzID, DATEDIFF(CURDATE(), ```sql
 SELECT EinsatzID, DATEDIFF(CURDATE(), Datum) AS TageSeitEinsatz
 FROM EINSATZ;
-```
-
-## Merksätze
-- Datumslogik zuerst fachlich klären, dann codieren.
+```klären, dann codieren.
 - Bei Zeiträumen Grenzen eindeutig setzen.
 - Datum und Zeit nicht unbewusst mischen.
 
@@ -37,3 +35,6 @@ FROM EINSATZ;
 - Falscher Datentyp (TEXT statt DATE/DATETIME).
 - Unscharfe Zeiträume („ab heute“) ohne genaue Bedingung.
 - Jahres-/Monatsfilter ohne Indexbewusstsein bei großen Datenmengen.
+
+## Begriffshilfe
+- [Stichwortverzeichnis Relationale Datenbanken](../begrifflichkeiten/stichwortverzeichnis_relationale_datenbanken.md)
